@@ -1,4 +1,4 @@
-# webdev_exercises
+# Web Developer Exercises
 Training exercises for new web developers
 
 ## Clone repository
