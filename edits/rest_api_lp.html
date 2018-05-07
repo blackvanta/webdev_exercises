@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Star Wars Enciclopedia</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/rest_api_lp.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="scripts/jquery.localScroll.js"></script>
+  <script src="scripts/jquery.scrollTo.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+</head>
+
+<!-- http://cryptap.dttheme.com/
+
+https://medium.com/vehikl-news/fixed-background-image-performance-issue-6b7d9e2dbc55
+
+boton help, quitar boton show info , info cuando seleccionas del dropdown
+
+quitar console logs x
+
+como utilize el api, con que AJAX, lo que aprendi
+
+boton en header
+
+background app
+
+boton estilo disabled
+
+documentar el codigo
+-->
+
+<body>
+
+  <div class="header">
+    <img class="header__logo" src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Star_Wars_Yellow_One_Line_Logo.svg" alt="logo">
+    <button class="header__btn"><i class="fa fa-bars"></i></button>
+    <div class="header__navbar">
+      <ul id="nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about_us">About Us</a></li>
+        <li><a href="#follow_us">Follow Us</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="home-section" id="home">
+    <div class="home-section__box fadeInLeft">
+      <div class="container-title">
+        <span class="home-section__title">STAR WARS ENCICLOPEDIA</span>
+      </div>
+      <div class="container-subtitle">
+        <span class="home-section__subtitle">Discover anything you want with a simple click</span>
+      </div>
+      <div class="container-button">
+        <a href="REST_API.html" name="button" class="btn btn--primary">BROWSE</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--dark" id="features">
+    <div class="features-grid">
+
+      <div class="left-column hidden-fade_in_left">
+        <img src="img/star_wars.png" class="img-enciclopedia" alt="">
+      </div>
+
+      <div class="right-column hidden-fade_in">
+        <span class="section__title">Discover the Star Wars universe!</span>
+        <div class="container-section__text">
+          <div class="section__text">
+            <span class="">
+    Welcome to the most comprehensive enciclopedia of the Star Wars galaxy, featuring characters from the Original Trilogy, Prequel Trilogy, and The Force Awakens. You can use this application to browse and explore the
+    characters and learn more about them. </span>
+          </div>
+        </div>
+        <div class="container-button">
+          <a href="REST_API.html" name="button" class="btn btn--secondary">BROWSE</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <div class="img1">
+  </div>
+
+  <section class="section section--light" id="about_us">
+    <div class="hidden-fade_in">
+      <span class="section__title">About Us</span><br><br>
+      <div class="container-section__text">
+        <span class="section__text">
+        We are a group of fans really passionate about Star Wars.  After hours of watching films we
+        came to the conclusion that there must be a fast and easy way to learn more about all the characters. On 2018 we finally decided to build this online encyclopedia using the Star Wars API which is the world's first quantified and programmatically-formatted set of Star Wars data. Our future plans include not only People but Films, Species, Starships, Vehicles and Planets from Star Wars.
+      </span>
+      </div>
+    </div>
+  </section>
+
+  <div class="img2">
+  </div>
+
+  <section class="section section--dark" id="follow_us">
+    <div class="follow_us-grid">
+      <div class="left-column hidden-light_speed_in">
+        <img src="img/bb8_approves.png" class="img-bb8" alt="">
+      </div>
+      <div class="right-column hidden-fade_in">
+        <span class="section__title">Follow us on social media!</span>
+        <div class="section__text">
+          <div class="section__social-icons">
+            <ul>
+              <li><a href="https://www.facebook.com/StarWars/"><i class="fa fa-facebook-square" aria-hidden="true"></i> </a></li>
+              <li><a href="https://www.instagram.com/starwars/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              <li><a href="https://twitter.com/starwars"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.youtube.com/starwars"><i class="fa fa-youtube-square" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="scripts/rest_api_lp.js"></script>
+</body>
+
+</html>

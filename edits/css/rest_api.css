@@ -1,0 +1,211 @@
+body {
+  width: auto;
+  height: 100vh;
+  color: white;
+  background-image: url("http://media-s3-us-east-1.ceros.com/editorial-content/images/2017/12/11/c759d78e5908c0b440c619d1bce865c8/background-stars.jpg");
+  background-color: #fff;
+  background-position: center center;
+  font-family: 'Gugi', cursive;
+  min-width: 764px;
+}
+
+img {
+  width: 300px;
+  margin: auto;
+  padding: 20px 0px;
+}
+
+.z-index_above {
+  z-index: 2;
+}
+
+.info {
+  content: border-box;
+  margin: auto;
+  text-align: center;
+}
+
+.color--primary {
+  color: #0050e6;
+}
+
+.color--secondary {}
+
+.wrapper {
+  display: grid;
+  padding-top: 3%;
+  color: #fbdd2c;
+  justify-content: center;
+  grid-gap: 0px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+.box {
+  box-sizing: border-box;
+  min-width: 400px;
+  padding: 30px 40px 40px 40px;
+  border: 3px #fbdd2c;
+  border-style: solid;
+  border-radius: 15px;
+  background-color: #000;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form-container {}
+
+.container-more-info {
+  display: none;
+}
+
+.container-more-info a {
+  color: white
+}
+
+.character-info {
+  margin-top: 40px;
+}
+
+.title {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+#star_wars-films {
+  margin-top: 20px;
+}
+
+.description {}
+
+.form-input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 44px;
+  margin-bottom: 10px;
+  padding: 10px 10px;
+  border: 1px solid #666;
+  border-radius: 5px;
+  outline: none;
+  font-family: 'Gugi', cursive;
+  font-size: 1em;
+}
+
+.form-input.display {
+  width: 50%;
+}
+
+.container-text {
+  max-width: 438px;
+  min-width: 379px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.text-style {
+  font-size: 1.1em;
+}
+
+.label {
+  display: inline-block;
+  width: 100px;
+  padding-right: 10px;
+  text-align: right;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.form__input:focus {
+  border-color: #0050e6;
+}
+
+.button-section {
+  text-align: right;
+  position: relative;
+}
+
+.button {
+  box-sizing: border-box;
+}
+
+.btn {
+  width: 150px;
+  height: 60px;
+  padding: 10px 15px;
+  outline: none;
+  font-family: 'Gugi', cursive;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.btn--primary {
+  color: #fbdd2c;
+  border: 2px #fbdd2c;
+  border-style: solid;
+  border-radius: 10px;
+  background-color: #000;
+}
+
+.more-info {
+  margin-right: 20px;
+  margin-top: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.home-page {
+  margin-left: 20px;
+  margin-top: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.btn--secondary {}
+
+.btn--primary:hover {
+  background-color: #040404;
+}
+
+.btn--primary:active {
+  transform: translateY(4px);
+}
+
+.btn--secondary:hover {}
+
+.active {
+  opacity: 1;
+}
+
+.invalid {
+  border: 1px solid #ff8080;
+  background-color: #ffdddd;
+}
+
+.finish {
+  border: 1px solid #73bf73;
+  background-color: #dcefdc;
+}
+
+::placeholder {
+  color: #666;
+}
+
+@media screen and (max-width:1024px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+  .box {
+    box-sizing: border-box;
+    grid-column-start: 1;
+  }
+}

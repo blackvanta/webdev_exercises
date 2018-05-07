@@ -1,0 +1,28 @@
+{
+  "version": "0.1",
+  "name": "SWAPI",
+  "description": "Online Star Wars enciclopedia",
+  "launch_path": "/edits/rest_api_lp.html",
+  "developer": {
+    "name": "Diego Azuara",
+    "url": ""
+  },
+  "locales": {
+    "es": {
+      "description": "",
+      "developer": {
+        "url": ""
+      }
+    },
+    "it": {
+      "description": "",
+      "developer": {
+        "url": ""
+      }
+    }
+  },
+  "default_locale": "en",
+  "permissions": {
+  },
+  "orientation": "portrait"
+}

@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html>
+
 <head lang="en">
-    <meta charset="UTF-8">
-    <title>CSS Patterns: Media Object</title>
+  <meta charset="UTF-8">
+  <title>CSS Patterns: Media Object</title>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style_stepper.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </head>
+
 <body>
 
-<!-- Exercise instructions:
+  <!-- Exercise instructions:
 
      1. Create a stepper to guide user through a sequence of steps, use any real reference to complete this.
      2. Must contain at least 4 diferent steps, a back button on each of the steps except for the first one.
@@ -14,11 +20,106 @@
      NOTE: Use material design guidelines for this stepper, I will be looking for symmetry and exact measurements (but
      you could use your criteria on how many pixels you are using on every component).
 
+
+     navbar transparente con fondo de color (?)
+     introduccion
+     pasos
+
+     color primary/secondary
+
+     https://material.io/color/#!/?view.left=0&view.right=1&primary.color=52c154&secondary.color=62148c
+     https://codepen.io/jsphstls/pen/yeRadY
+     https://www.w3schools.com/howto/howto_js_form_steps.asp
+     https://www.w3schools.com/howto/howto_custom_select.asp
+     https://applyweb.collegenet.com/account/new/create?origin=https%3A%2F%2Fwww.applyweb.com%2Fshibboleth%2Fgatekeeper%3Fdest%3Dhttps%253A%252F%252Fwww.applyweb.com%252Fmh%252F
+
+
+-Si usas onclick en html solo se puede ejecutar una funcion, si usas javaScript puedes ejecutar varias funciones
+
+-Clics a los circulos y que cambien los tabs
+
+-Grid 1/2 rows 1fr 1fr y asi
+
+-@media solo es para elementos que cambian, la responsividad deberia ser fluida usando grids con 1fr o algo fluido
+
+-En javaScript recuerda comentar tu codigo y usar variables descriptivas
+
+-Revisa las diferencias entre eventlistener asignado a una veriable o document.eventlistener
+
+-Se recomienda usar eventlisteners para la seguridad de la pagina
+
+-En las clases el "_" es para hacer un espacio entre dos palabras ej wrapper-register_window
+
+-En las clases el "-" ss para explicar lo que realiza, por ej. wrapper-register
+
+-Usar camel case para variables
+
  -->
 
   <!-- Write your code here -->
 
+  <div class="wrapper-register">
+    <div class="box">
+      <div class="step-tabs">
+        <span class="step" id="step-1"></span>
+        <span class="step" id="step-2"></span>
+        <span class="step" id="step-3"></span>
+        <span class="step" id="step-4"></span>
+      </div>
+      <div class="form-container">
+        <form id="regForm">
+          <div class="tab">
+            <div class="info">
+              <h1 class="title">Create your account</h1>
+              <span class="description">Use a valid email address. Password must be 8 characters long, we recommend the use of upper and lower case letters. </span>
+            </div>
+            <select class="form-input">
+              <option value="united_states">United States</option>
+              <option value="méxico">México</option>
+              <option value="canada">Canada</option>
+            </select>
+            <input type="email" class="form-input" id="email" oninput="this.className = 'form-input'" name="" placeholder="Email">
+            <input type="password" class="form-input" id="password" oninput="this.className = 'form-input'" name="" placeholder="Create your password">
+            <input type="password" class="form-input" id="confirm_password" oninput="this.className = 'form-input'" name="" placeholder="Confirm your password">
+          </div>
+          <div class="tab">
+            <div class="info">
+              <h1 class="title">Personal Information</h1>
+              <span class="description">You must use your full legal name. Please do not use all capital letters. </span>
+            </div>
+            <input class="form-input" oninput="this.className = 'form-input'" placeholder="First Name" oninput="this.className = ''" name="first_name">
+            <input class="form-input" oninput="this.className = 'form-input'" placeholder="Last Name" oninput="this.className = ''" name="last_name">
+            <input type="date" class="form-input" oninput="this.className = 'form-input'" placeholder="Date of Birth " name="date" onfocus="(this.type='date')" required>
+          </div>
+          <div class="tab">
+            <div class="info">
+              <h1 class="title">Address Information</h1>
+              <span class="description"> Please use a real address, if you’re using this account as a business you could use your business address. </span>
+            </div>
+            <input class="form-input" oninput="this.className = 'form-input'" placeholder="Street Address 1" name="street_address">
+            <input class="form-input" oninput="this.className = 'form-input'" placeholder="Street Address 2" name="street_address">
+            <input type="tel" class="form-input" oninput="this.className = 'form-input'" placeholder="Phone Number" name="phone_number">
+            <input class="form-input" oninput="this.className = 'form-input'" placeholder="City" name="state">
+            <input class="form-input" oninput="this.className = 'form-input'" placeholder="Zip" name="zip_code">
+          </div>
+          <div class="tab">
+            <div class="info">
+              <h1 class="title">Thank you!</h1>
+              <span class="description">Thank you for your application! <br> Please check your information before submiting. </span>
+            </div>
+          </div>
+        </form>
+        <div class="button-section">
+          <button type="button" class="btn--secondary" id="prevBtn" name="button">Previous</button>
+          <button type="button" class="btn--primary" id="nextBtn" name="button">Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts/script_stepper.js"></script>
 </body>
+
 </html>
 
 <!--

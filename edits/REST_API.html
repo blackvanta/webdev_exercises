@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Rest API</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+  <link rel="stylesheet" href="css/rest_api.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <!-- Instructions:
+     1. Create a form which will contain multiple inputs, those inputs will be disabled until the user has selected
+     the first input. (those have to be any non simple text input, may be dropdowns, checkboxes, multipleselects, etc...)
+     2. The label info must focus the input when user clicks on it.
+     3. At least 3 of the inputs must have info generated from a REST-api with $.ajax in a javascript promise.
+     IMPORTANT: need to implement then and catch callbacks and change something in the DOM.
+        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+        please (optional) search for another better fake api https://reqres.in/
+     4. (Optional) user may add info to those inputs and data would be saved (POST).
+     5. Add a link to a html page where users can learn about ajax and promises (make it easy for the user)
+     6. Add a landing page explaining the website. https://www.google.com/drive/, https://teambit.io/, https://www.webprofits.com.au/
+
+https://swapi.co/
+
+-Dentro del image tag para cambiar la imagen dependeindo de la resolucion de la pantalla
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
+
+https://www.google.com/drive/
+
+ -->
+  <div class="button-section">
+    <button type="button" class="btn btn--primary more-info z-index_above" id="showBtn" name="button">MORE INFO</button>
+    <button type="button" class="btn btn--primary home-page z-index_above" id="homePageBtn" name="button">HOME PAGE</button>
+  </div>
+
+  <div class="wrapper">
+    <div class="box">
+      <div class="container-more-info">
+        <img src="https://vignette.wikia.nocookie.net/disney/images/2/21/Star_Wars_logo.png/revision/latest?cb=20170909202326">
+
+        <div class="container-text">
+          <span class="text-style">The Star Wars Character Enciclopedia uses asynchronous HTTP (<a  class="url" href="http://api.jquery.com/jquery.ajax/">Ajax</a>) request, it loads data from SWAPI (<a href="https://swapi.co/">Star Wars Api</a>) using a HTTP GET request. The Star Wars API is the world's first quantified and programmatically-formatted set of Star Wars data.
+It contains all the People, Films, Species, Starships, Vehicles and Planets from Star Wars. The data is formatted in JSON and exposed in a RESTish implementation that allows you to programmatically collect and measure the data. </span>
+          <p><span class="text-style">This app also uses JavaScript promises. Promises provide a clean, flexible way to chain multiple async operations together without having to nest function calls inside callbacks. Promises where used to handle errors, and to display the HTTP status codes. If there is a connection error a alert message will appear with the status number. </span></p>
+
+        </div>
+
+        <div class="center">
+          <button type="button" class="btn btn--primary" id="goBack" name="button">GO BACK</button>
+        </div>
+
+      </div>
+
+      <div class="form-container">
+        <form id="regForm">
+          <div class="tab">
+            <div class="info">
+              <img src="https://vignette.wikia.nocookie.net/disney/images/2/21/Star_Wars_logo.png/revision/latest?cb=20170909202326">
+              <div class="container-title">
+                <span class="title"> CHARACTER ENCICLOPEDIA  </span>
+              </div>
+              <!--</div>
+            <div class="learn more">
+              <span class="info-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+            </div>
+            <!-- Selects are populated via JavaScript-->
+              <select id="star_wars-films" class="form-input"></select>
+              <select id="star_wars-characters" class="form-input" disabled> </select>
+              <!-- Homeworld , birth year, gender, hair color, height , mass-->
+              <div class="character-info">
+                <div class="info-row">
+                  <span class="label ">Homeworld:</span>
+                  <input type="text" id="homeworld" name="homeworld" value="" class="form-input display" disabled>
+                </div>
+                <div class="info-row">
+                  <span class="label ">Birth Year:</span>
+                  <input type="text" id="birth_year" name="birth_year" value="" class="form-input display" disabled>
+                </div>
+                <div class="info-row">
+                  <span class="label ">Gender:</span>
+                  <input type="text" id="gender" name="gender" value="" class="form-input display" disabled><br>
+                </div>
+                <div class="info-row">
+                  <span class="label ">Hair Color:</span>
+                  <input type="text" id="hair_color" name="species" value="" class="form-input display" disabled>
+                </div>
+                <div class="info-row">
+                  <span class="label ">Height:</span>
+                  <input type="text" id="height" name="height" value="" class="form-input display" disabled><br>
+                </div>
+                <div class="info-row">
+                  <span class="label ">Mass:</span>
+                  <input type="text" id="mass" name="mass" value="" class="form-input display" disabled><br>
+                </div>
+              </div>
+        </form>
+        </div>
+        </div>
+      </div>
+      <script src="scripts/rest_api.js"></script>
+</body>
+
+</html>
+
+<!--
+ *
+ * JavaScript Promises act as a asynchronous operation, this can be helpful when something has to be done
+ * after the promise has finish the operation.
+ *
+ * AJAX:
+ * https://developer.mozilla.org/es/docs/Web/Guide/AJAX
+ *
+ *
+ -->

@@ -1,0 +1,143 @@
+body {
+  background-color: #000;
+  font-family: 'Gugi', cursive;
+  color: white;
+}
+
+img {
+  width: 300px;
+  padding: 20px 0px;
+  margin: auto;
+}
+
+.info {
+  text-align: center;
+  content: border-box;
+  margin: auto;
+}
+
+.color--primary {
+  color: #0050e6;
+}
+
+.color--secondary {}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  padding-top: 50px;
+  grid-gap: 0px;
+  background-color: #000000;
+  color: #fbdd2c;
+  justify-content: center;
+}
+
+.box {
+  grid-column-start: 2;
+  background-color: #000;
+  box-sizing: border-box;
+  padding: 30px 40px 40px 40px;
+  text-align: center;
+  min-width: 500px;
+  margin: 50px 20px;
+  border-radius: 15px;
+  border: 3px #fbdd2c;
+  border-style: solid;
+}
+
+.form-container {}
+
+.info {
+  padding-bottom: 20px;
+}
+
+.character-info {
+  margin: 20px 0px;
+}
+
+.title {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.description {}
+
+.form-input {
+  height: 44px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Gugi', cursive;
+  font-size: 1em;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #666;
+  outline: none;
+}
+
+.form-input.display {
+  width: 50%;
+}
+
+.label {
+  font-size: 1.1em;
+  display: inline-block;
+  width: 100px;
+  padding-right: 10px;
+  text-align: right;
+  font-weight: bold;
+}
+
+.form__input:focus {
+  border-color: #0050e6;
+}
+
+.button-section {
+  text-align: center;
+}
+
+.button {
+  box-sizing: border-box;
+}
+
+.btn--primary {
+  background-color: #000;
+  height: 60px;
+  width: 150px;
+  font-size: 1em;
+  font-family: 'Gugi', cursive;
+  color: #fbdd2c;
+  border-radius: 10px;
+  border: 2px #fbdd2c;
+  border-style: solid;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+  outline: none;
+}
+
+.btn--secondary {}
+
+.btn--primary:hover {
+  background-color: #000;
+}
+
+.btn--secondary:hover {}
+
+.active {
+  opacity: 1;
+}
+
+.invalid {
+  background-color: #ffdddd;
+  border: 1px solid #ff8080;
+}
+
+.finish {
+  background-color: #dcefdc;
+  border: 1px solid #73bf73;
+}
+
+::placeholder {
+  color: #666;
+}
